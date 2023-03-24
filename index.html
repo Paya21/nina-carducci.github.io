@@ -10,11 +10,20 @@
 	<meta charset="UTF-8">
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
-	<title>Nina Carducci</title>
+	<title>Nina Carducci - Photographe à Bordeaux</title>
+	<meta property="og:title" content="Nina Carducci - Photographe à Bordeaux"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://paya21.github.io/nina-carducci.github.io/"/>
+	<meta property="og:image" content="./assets/images/nina.webp"/>
+	<meta property="og:description" content="saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos."/>
+	<meta name="twitter:card" content="Nina Carducci - Photographe à Bordeaux">
 </head>
 <body>
+<header>
 <div class="top-header">
-	<h3 class="name">Nina Carducci</h3>
+	<div itemscope itemtype="https://schema.org/Person">
+	<h3 class="name" itemprop="name">Nina Carducci</h3>
+	</div>
 	<div class="nav">   
 		<ul>
 			<li><a href="#about">À propos</a></li>
@@ -54,9 +63,13 @@
 		</button>
 	</div>
 </div>
+</header>
+<section>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.webp" alt="photographe Nina Carducci">
+		<div itemscope itemtype="https://schema.org/Person">
+		<img src="./assets/images/nina.webp" itemprop="image" alt="photographe Nina Carducci">
+		</div>
 	</div>
 	<div id="about-me">
 		<h3 class="about-me__title">A propos de moi</h3>
@@ -65,6 +78,8 @@
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
 </div>
+</section>
+<section>
 <div id="gallery">
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
@@ -89,6 +104,8 @@
 		</figure>
 	</div>
 </div>
+</section>
+<section>
 <div id="services">
 	<h2 class="title">Mes services</h2>
 	<div class="container">
@@ -133,11 +150,18 @@
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
 </div>
+</section>
+<footer>
 <div id="contact">
 	<div class="container">
 		<div class="form-container">
 			<h2>Une question ? Une demande de devis ?</h2>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
+			<div itemscope itemtype="https://schema.org/PostalAddress">
+				<span itemprop="PostalAddress">
+					68 avenue Alsace-Lorraine, 33200 Bordeaux
+				</span>
+			</div>
 			<form action="" method="post">
 				<label for="nom">Nom</label>
 				<input type="text" name="nom" id="nom">
@@ -153,7 +177,7 @@
 		</div>
 	</div>
 </div>
-
+</footer>
 </body>
 <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
